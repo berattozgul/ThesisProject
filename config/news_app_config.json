@@ -1,0 +1,228 @@
+{
+  "appName": "NewsHub",
+  "version": "1.0.0",
+  "theme": {
+    "colors": {
+      "primaryColor": "#FF6B6B",
+      "secondaryColor": "#4ECDC4",
+      "backgroundColor": "#F9FAFB",
+      "textColor": "#1F2933",
+      "accentColor": "#FFD93D",
+      "cardColor": "#FFFFFF"
+    },
+    "fonts": {
+      "fontFamily": "Roboto",
+      "headlineSize": "24",
+      "bodySize": "16"
+    },
+    "mode": "light"
+  },
+  "navigation": {
+    "type": "bottom",
+    "routes": [
+      {
+        "path": "/home",
+        "name": "Home",
+        "screenType": "feed"
+      },
+      {
+        "path": "/categories",
+        "name": "Categories",
+        "screenType": "list"
+      },
+      {
+        "path": "/search",
+        "name": "Search",
+        "screenType": "search"
+      },
+      {
+        "path": "/profile",
+        "name": "Profile",
+        "screenType": "profile"
+      }
+    ],
+    "items": [
+      {
+        "label": "Home",
+        "icon": "home",
+        "route": "/home"
+      },
+      {
+        "label": "Categories",
+        "icon": "category",
+        "route": "/categories"
+      },
+      {
+        "label": "Search",
+        "icon": "search",
+        "route": "/search"
+      },
+      {
+        "label": "Profile",
+        "icon": "person",
+        "route": "/profile"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "type": "textBlock",
+      "id": "headline_banner",
+      "properties": {
+        "title": "Top Stories",
+        "subtitle": "Curated news powered by data",
+        "alignment": "left"
+      }
+    },
+    {
+      "type": "articleList",
+      "id": "main_feed",
+      "layout": {
+        "type": "list",
+        "spacing": 16.0
+      },
+      "properties": {
+        "showImage": true,
+        "pageSize": 5,
+        "items": [
+          {
+            "title": "AI reshapes mobile experiences",
+            "category": "Technology",
+            "time": "2h ago",
+            "author": "Jordan Reid",
+            "description": "From personalized feeds to adaptive interfaces, artificial intelligence is redefining how we interact with apps on the go.",
+            "image":
+              "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Smart cities invest in data-driven design",
+            "category": "Innovation",
+            "time": "5h ago",
+            "author": "Maria Chen",
+            "description": "Urban planners are turning to real-time data and AI to optimize traffic, energy, and public services.",
+            "image":
+              "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Flutter 5.0 introduces dynamic shells",
+            "category": "Development",
+            "time": "8h ago",
+            "author": "Alex Rivera",
+            "description": "The new dynamic shell architecture lets you compose UIs from configuration, speeding up multi-tenant and white-label apps.",
+            "image":
+              "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Quantum computing breakthrough announced",
+            "category": "Science",
+            "time": "12h ago",
+            "author": "Dr. Sarah Mitchell",
+            "description": "Researchers achieve quantum supremacy with new error-correcting algorithms, bringing practical quantum computing closer to reality.",
+            "image":
+              "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Global markets surge on tech optimism",
+            "category": "Business",
+            "time": "1d ago",
+            "author": "James Thompson",
+            "description": "Stock markets worldwide reach new highs as investors bet on AI and automation driving next economic cycle.",
+            "image":
+              "https://images.unsplash.com/photo-1611974789855-9e2d0e8b32ce?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Climate summit sets ambitious 2030 targets",
+            "category": "World",
+            "time": "1d ago",
+            "author": "Emma Wilson",
+            "description": "World leaders commit to 50% emissions reduction by 2030, with new funding for renewable energy infrastructure.",
+            "image":
+              "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "SpaceX launches next-gen satellite constellation",
+            "category": "Technology",
+            "time": "2d ago",
+            "author": "Michael Chen",
+            "description": "Elon Musk's company deploys 200 new satellites to expand global internet coverage, bringing connectivity to remote regions.",
+            "image":
+              "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Breakthrough in renewable energy storage",
+            "category": "Innovation",
+            "time": "2d ago",
+            "author": "Lisa Anderson",
+            "description": "New battery technology promises to store solar and wind energy for weeks, solving renewable energy's biggest challenge.",
+            "image":
+              "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Healthcare AI reduces diagnostic errors by 40%",
+            "category": "Science",
+            "time": "3d ago",
+            "author": "Dr. Robert Kim",
+            "description": "Machine learning systems assist doctors in identifying rare conditions, improving patient outcomes across hospitals.",
+            "image":
+              "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Remote work transforms urban planning",
+            "category": "Business",
+            "time": "3d ago",
+            "author": "Patricia Martinez",
+            "description": "Cities redesign downtown areas as hybrid work models reshape demand for office space and transportation.",
+            "image":
+              "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=600&q=60"
+          }
+        ]
+      }
+    },
+    {
+      "type": "quoteHighlight",
+      "id": "editor_pick",
+      "properties": {
+        "quote": "\"A dynamic shell is like a blank canvas where data paints the experience.\"",
+        "author": "Selim Kaya",
+        "role": "Lead Architect"
+      }
+    },
+    {
+      "type": "categoryList",
+      "id": "categories",
+      "layout": {
+        "type": "grid",
+        "columns": 2,
+        "spacing": 12.0
+      },
+      "properties": {
+        "items": [
+          { "label": "World", "icon": "public" },
+          { "label": "Tech", "icon": "memory" },
+          { "label": "Science", "icon": "science" },
+          { "label": "Business", "icon": "business_center" }
+        ]
+      }
+    },
+    {
+      "type": "breakingNews",
+      "id": "breaking_banner",
+      "properties": {
+        "headline": "Data-driven architectures win 2025 innovation award",
+        "cta": "Read full story",
+        "image":
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=60"
+      }
+    }
+  ],
+  "ai": {
+    "enabled": true,
+    "algorithm": "content-based",
+    "parameters": {
+      "minScore": 0.3,
+      "maxRecommendations": 10
+    },
+    "recommendationCount": 4
+  }
+}
+

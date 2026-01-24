@@ -1,0 +1,253 @@
+{
+  "appName": "ShopHub",
+  "version": "1.0.0",
+  "theme": {
+    "colors": {
+      "primaryColor": "#4ECDC4",
+      "secondaryColor": "#FF6B6B",
+      "backgroundColor": "#F7F4F1",
+      "textColor": "#1F2A37",
+      "accentColor": "#F7B500",
+      "cardColor": "#FFFFFF"
+    },
+    "fonts": {
+      "fontFamily": "Roboto",
+      "headlineSize": "24",
+      "bodySize": "16"
+    },
+    "mode": "light"
+  },
+  "navigation": {
+    "type": "bottom",
+    "routes": [
+      {
+        "path": "/home",
+        "name": "Home",
+        "screenType": "products"
+      },
+      {
+        "path": "/categories",
+        "name": "Categories",
+        "screenType": "categories"
+      },
+      {
+        "path": "/cart",
+        "name": "Cart",
+        "screenType": "cart"
+      },
+      {
+        "path": "/profile",
+        "name": "Profile",
+        "screenType": "profile"
+      }
+    ],
+    "items": [
+      {
+        "label": "Home",
+        "icon": "home",
+        "route": "/home"
+      },
+      {
+        "label": "Shop",
+        "icon": "shopping_bag",
+        "route": "/categories"
+      },
+      {
+        "label": "Cart",
+        "icon": "shopping_cart",
+        "route": "/cart"
+      },
+      {
+        "label": "Profile",
+        "icon": "person",
+        "route": "/profile"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "type": "textBlock",
+      "id": "promo_banner",
+      "properties": {
+        "title": "Weekend Deals",
+        "subtitle": "Personalized offers crafted by AI",
+        "alignment": "center"
+      }
+    },
+    {
+      "type": "productGrid",
+      "id": "featured_products",
+      "layout": {
+        "type": "grid",
+        "columns": 2,
+        "spacing": 12.0
+      },
+      "properties": {
+        "pageSize": 6,
+        "items": [
+          {
+            "name": "Smart Watch Pro",
+            "price": 249.99,
+            "rating": 4.7,
+            "description": "Track fitness, get notifications, and stay connected. Water-resistant, 7-day battery, and a bright always-on display.",
+            "image":
+              "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Noise Cancelling Headphones",
+            "price": 189.0,
+            "rating": 4.8,
+            "description": "Industry-leading noise cancellation and 30-hour battery life. Perfect for travel, work, and focused listening.",
+            "image":
+              "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Smart Home Speaker",
+            "price": 129.5,
+            "rating": 4.5,
+            "image":
+              "https://picsum.photos/seed/smartspeaker/800/450"
+          },
+          {
+            "name": "AI Fitness Band",
+            "price": 99.0,
+            "rating": 4.2,
+            "description": "Track steps, heart rate, and sleep patterns with AI-powered insights. Waterproof design with 14-day battery life.",
+            "image":
+              "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Wireless Earbuds Pro",
+            "price": 159.99,
+            "rating": 4.6,
+            "description": "Premium sound quality with active noise cancellation. 8-hour battery with charging case for 32 hours total.",
+            "image":
+              "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "4K Ultra HD Monitor",
+            "price": 449.99,
+            "rating": 4.8,
+            "description": "27-inch display with HDR support, perfect for creative work and gaming. 144Hz refresh rate and color-accurate panel.",
+            "image":
+              "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Mechanical Keyboard RGB",
+            "price": 129.99,
+            "rating": 4.5,
+            "description": "Cherry MX switches with customizable RGB lighting. Ergonomic design for long coding and gaming sessions.",
+            "image":
+              "https://images.unsplash.com/photo-1541140532154-b024d705b90a?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Portable SSD 2TB",
+            "price": 199.99,
+            "rating": 4.9,
+            "description": "Lightning-fast data transfer with USB-C connectivity. Rugged design, perfect for photographers and content creators.",
+            "image":
+              "https://images.unsplash.com/photo-1591488320449-11f0d4c8f3d6?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Smart Ring Health Tracker",
+            "price": 299.99,
+            "rating": 4.4,
+            "description": "Discreet health monitoring in a stylish ring. Tracks activity, sleep, and heart rate with week-long battery.",
+            "image":
+              "https://images.unsplash.com/photo-1607613009820-a29f7bb81c0c?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Ergonomic Office Chair",
+            "price": 349.99,
+            "rating": 4.7,
+            "description": "Lumbar support with adjustable height and armrests. Breathable mesh back for all-day comfort.",
+            "image":
+              "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Wireless Charging Pad",
+            "price": 39.99,
+            "rating": 4.3,
+            "description": "Fast wireless charging for phones and earbuds. Sleek design with LED indicator and overcharge protection.",
+            "image":
+              "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Smart Thermostat Pro",
+            "price": 249.99,
+            "rating": 4.6,
+            "description": "AI learns your schedule to optimize energy usage. Voice control and smartphone app integration included.",
+            "image":
+              "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "name": "Gaming Mouse RGB",
+            "price": 79.99,
+            "rating": 4.5,
+            "description": "High-precision sensor with customizable DPI settings. RGB lighting and programmable buttons for gamers.",
+            "image":
+              "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=60"
+          }
+        ]
+      }
+    },
+    {
+      "type": "categoryList",
+      "id": "categories",
+      "layout": {
+        "type": "grid",
+        "columns": 3,
+        "spacing": 8.0
+      },
+      "properties": {
+        "items": [
+          { "label": "Wearables", "icon": "watch" },
+          { "label": "Audio", "icon": "headphones" },
+          { "label": "Home", "icon": "home" },
+          { "label": "Fitness", "icon": "fitness_center" },
+          { "label": "Office", "icon": "chair" },
+          { "label": "Accessories", "icon": "diamond" }
+        ]
+      }
+    },
+    {
+      "type": "storyCarousel",
+      "id": "brand_highlights",
+      "properties": {
+        "items": [
+          {
+            "title": "AI Curated Picks",
+            "subtitle": "Shop items selected just for you",
+            "image":
+              "https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=60"
+          },
+          {
+            "title": "Designer Spotlight",
+            "subtitle": "Meet the creative minds behind our top sellers",
+            "image":
+              "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=60"
+          }
+        ]
+      }
+    },
+    {
+      "type": "testimonial",
+      "id": "customer_voice",
+      "properties": {
+        "quote": "\"Dynamic shells let us ship five store fronts in one sprint.\"",
+        "author": "Lara Kim",
+        "title": "Head of Commerce"
+      }
+    }
+  ],
+  "ai": {
+    "enabled": true,
+    "algorithm": "collaborative",
+    "parameters": {
+      "minScore": 0.4,
+      "maxRecommendations": 15
+    },
+    "recommendationCount": 8
+  }
+}
+

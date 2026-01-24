@@ -1,0 +1,239 @@
+{
+  "appName": "LearnHub",
+  "version": "1.0.0",
+  "theme": {
+    "colors": {
+      "primaryColor": "#9B59B6",
+      "secondaryColor": "#3498DB",
+      "backgroundColor": "#F4F2FB",
+      "textColor": "#2F2A41",
+      "accentColor": "#F39C12",
+      "cardColor": "#FFFFFF"
+    },
+    "fonts": {
+      "fontFamily": "Roboto",
+      "headlineSize": "26",
+      "bodySize": "16"
+    },
+    "mode": "light"
+  },
+  "navigation": {
+    "type": "bottom",
+    "routes": [
+      {
+        "path": "/home",
+        "name": "Home",
+        "screenType": "courses"
+      },
+      {
+        "path": "/my-courses",
+        "name": "My Courses",
+        "screenType": "myCourses"
+      },
+      {
+        "path": "/progress",
+        "name": "Progress",
+        "screenType": "progress"
+      },
+      {
+        "path": "/profile",
+        "name": "Profile",
+        "screenType": "profile"
+      }
+    ],
+    "items": [
+      {
+        "label": "Explore",
+        "icon": "explore",
+        "route": "/home"
+      },
+      {
+        "label": "My Courses",
+        "icon": "book",
+        "route": "/my-courses"
+      },
+      {
+        "label": "Progress",
+        "icon": "trending_up",
+        "route": "/progress"
+      },
+      {
+        "label": "Profile",
+        "icon": "person",
+        "route": "/profile"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "type": "textBlock",
+      "id": "learning_intro",
+      "properties": {
+        "title": "Continue Learning",
+        "subtitle": "Dynamic paths curated for you",
+        "alignment": "left"
+      }
+    },
+    {
+      "type": "courseList",
+      "id": "featured_courses",
+      "layout": {
+        "type": "list",
+        "spacing": 16.0
+      },
+      "properties": {
+        "showProgress": true,
+        "pageSize": 4,
+        "items": [
+          {
+            "title": "AI-Driven UX Design",
+            "instructor": "Dr. Elaine Park",
+            "duration": "12h",
+            "progress": 0.65,
+            "description": "Learn to design interfaces that adapt to user behavior and context using data and machine learning.",
+            "image":
+              "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Flutter for Dynamic Architectures",
+            "instructor": "Marcus Lee",
+            "duration": "8h",
+            "progress": 0.4,
+            "description": "Build config-driven, multi-tenant Flutter apps with JSON-defined layouts and modular shells.",
+            "image":
+              "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Data Storytelling with Dashboards",
+            "instructor": "Sara Ahmed",
+            "duration": "10h",
+            "progress": 0.8,
+            "description": "Transform raw data into compelling visual narratives. Master dashboard design principles and interactive visualizations.",
+            "image":
+              "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Machine Learning Fundamentals",
+            "instructor": "Dr. David Chen",
+            "duration": "15h",
+            "progress": 0.2,
+            "description": "Introduction to supervised and unsupervised learning. Build your first models with Python and scikit-learn.",
+            "image":
+              "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Advanced React Patterns",
+            "instructor": "Jennifer Walsh",
+            "duration": "14h",
+            "progress": 0.0,
+            "description": "Master hooks, context, and performance optimization. Build scalable React applications with modern patterns.",
+            "image":
+              "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Cloud Architecture & DevOps",
+            "instructor": "Raj Patel",
+            "duration": "18h",
+            "progress": 0.1,
+            "description": "Design scalable cloud solutions with AWS, Docker, and Kubernetes. Learn CI/CD pipelines and infrastructure as code.",
+            "image":
+              "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Digital Marketing Strategy",
+            "instructor": "Sophie Brown",
+            "duration": "9h",
+            "progress": 0.0,
+            "description": "Create data-driven marketing campaigns. Master SEO, social media, and analytics to grow your business.",
+            "image":
+              "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Python for Data Science",
+            "instructor": "Dr. Maria Garcia",
+            "duration": "20h",
+            "progress": 0.3,
+            "description": "Complete guide to pandas, NumPy, and Matplotlib. Analyze datasets and create visualizations from scratch.",
+            "image":
+              "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "UI/UX Design Principles",
+            "instructor": "Tom Anderson",
+            "duration": "11h",
+            "progress": 0.0,
+            "description": "Learn user-centered design, wireframing, and prototyping. Create interfaces that users love.",
+            "image":
+              "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Blockchain Development",
+            "instructor": "Alex Kumar",
+            "duration": "16h",
+            "progress": 0.0,
+            "description": "Build decentralized applications with Solidity and Ethereum. Understand smart contracts and Web3 technologies.",
+            "image":
+              "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=600&q=60"
+          },
+          {
+            "title": "Mobile App Development with Swift",
+            "instructor": "Emma Johnson",
+            "duration": "13h",
+            "progress": 0.0,
+            "description": "Build native iOS apps with SwiftUI. Learn app architecture, Core Data, and App Store deployment.",
+            "image":
+              "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=60"
+          }
+        ]
+      }
+    },
+    {
+      "type": "categoryList",
+      "id": "course_categories",
+      "layout": {
+        "type": "grid",
+        "columns": 2,
+        "spacing": 12.0
+      },
+      "properties": {
+        "items": [
+          { "label": "AI & Data", "icon": "psychology" },
+          { "label": "Design", "icon": "palette" },
+          { "label": "Mobile", "icon": "phone_android" },
+          { "label": "Business", "icon": "insights" }
+        ]
+      }
+    },
+    {
+      "type": "quoteHighlight",
+      "id": "mentor_quote",
+      "properties": {
+        "quote": "\"Learning paths that adjust in real time keep our students motivated.\"",
+        "author": "Dr. Mateo Cruz",
+        "role": "Director of Learning"
+      }
+    },
+    {
+      "type": "lessonSpotlight",
+      "id": "lesson_spotlight",
+      "properties": {
+        "title": "New Module: Adaptive Dashboards",
+        "description": "Build a dashboard shell that morphs its layout from JSON streams.",
+        "image":
+          "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=60",
+        "cta": "Continue lesson"
+      }
+    }
+  ],
+  "ai": {
+    "enabled": true,
+    "algorithm": "hybrid",
+    "parameters": {
+      "minScore": 0.35,
+      "maxRecommendations": 12,
+      "difficultyWeight": 0.3
+    },
+    "recommendationCount": 6
+  }
+}
+
