@@ -1,6 +1,6 @@
 {
   "appName": "NewsHub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "theme": {
     "colors": {
       "primaryColor": "#FF6B6B",
@@ -90,7 +90,7 @@
             "category": "Technology",
             "time": "2h ago",
             "author": "Jordan Reid",
-            "description": "From personalized feeds to adaptive interfaces, artificial intelligence is redefining how we interact with apps on the go.",
+            "description": "BERAT From personalized feeds to adaptive interfaces, artificial intelligence is redefining how we interact with apps on the go.",
             "image":
               "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60"
           },
@@ -225,4 +225,5 @@
     "recommendationCount": 4
   }
 }
+
 
